@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kedge - Web Development Sprint</title>
+  <!-- Aya's Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <script src="https://kit.fontawesome.com/5247078dce.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- Banner section -->
+  <div class="Banner">
+    <header>
+      <nav class="navigation-bar">
+        <a class="nav-bar-links" href="">Destinations</a> 
+        <a class="nav-bar-links" href="">Activités</a>
+        <a class="nav-bar-links" href="">Thèmes</a>
+        <a id="nav-bar-link-seconnecter" href="">Se connecter</a>
+      </nav>
+    </header>
+    <video autoplay muted loop id="video-banner">
+      <source src="Vidéos/Video-banner.mov" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+    <div class="banner-content">
+      <h1>Découvrez les plus beaux endroits du Maroc</h1>
+      <p>Les plus beaux lieux à visiter du Maroc avec des conseils d'initiés</p>
+    </div>
+      <a class="btn-green" href="">Planifier votre voyage !</a>
+  </div>
+
+  <!-- Cards section -->
+   <div class="cards-section">
+    <div class="container">
+      <h2>Découvrez nos top 3 des destinations 😍</h2>
+      <div class="Cards">
+        <div class="card-white effect">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <img src="https://destinationpaschere.com/wp-content/uploads/2019/08/majorelle-1.jpg" alt="Marrakech">
+                  <h3>Marrakech</h3>
+              </div>
+              <div class="flip-card-back">
+                  <h3>Marrakech</h3>
+                  <ul>
+                      <li class="listing-endroits">Le <strong>souk</strong>, un des plus animés du pays</li>
+                      <li class="listing-endroits">La place <strong>Jame3 El Fna</strong> avec ses artisans</li>
+                      <li class="listing-endroits" >La mosquée <strong>Koutoubia</strong></li>
+                      <li class="listing-endroits">les ruines du <strong>Palais El Badi</strong></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      
+      <div class="card-white effect">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <img src="https://destinationpaschere.com/wp-content/uploads/2022/06/chefchaouen-gf4c7d4680_640.jpg" alt="Chefchaouen">
+                  <h3>Chefchaouen</h3>
+              </div>
+              <div class="flip-card-back">
+                  <h3>Chefchaouen</h3>
+                  <ul class="listing-endroits">
+                      <li class="listing-endroits">Ses ruelles aux multiples nuances de <strong>bleu</strong></li>
+                      <li class="listing-endroits">Les superbes <strong>cascades d'Akchour</strong></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      
+      <div class="card-white effect">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <img src="https://destinationpaschere.com/wp-content/uploads/2022/06/ouarzazate-gfec0c2ad2_640.jpg" alt="Ouarzazate">
+                  <h3>Ouarzazate</h3>
+              </div>
+              <div class="flip-card-back">
+                  <h3>Ouarzazate</h3>
+                  <ul class="listing-endroits">
+                      <li class="listing-endroits">La <strong>Kasbah d’Ait Ben Haddou</strong>, un village inscrit au patrimoine national de l’UNESCO </li>
+                      <li class="listing-endroits">Les lieux de tournages d’<strong>Astérix et Obélix : Mission Cléopâtre et Gladiator</strong> </li>
+                  </ul>
+              </div>
+          </div>
+      </div>      
+      </div>
+    </div>
+  </div>
+
+ <!-- paragraph section -->
+  <div class="paragraph">
+    <div class="container">
+    <h1 class="headtext-center">Quelles sont les principales attractions touristiques du Maroc ?</h1>
+    <h2 class="text-center">Un séjour au Maroc est un formidable voyage pour tous les sens. Laissez-vous envoûter par l'odeur de l'encens, du parfum et de la menthe. Écoutez l'appel à la prière retentir dans les mosquées. Ressentez la chaleur du soleil sur votre peau, tandis que vous arpentez les ruelles pavées ou les côtes sablonneuses. Émerveillez-vous devant les vêtements traditionnels et les piles d'épices colorées dans des endroits comme la place du marché Jemaa el-Fna à Marrakech. Découvrez des plages magnifiques comme celle de Legzira, des lieux uniques comme les rues bleues de Chefchaouen et des cascades à couper le souffle comme celle d'Ouzoud.</h2>
+    </div>
+  </div>
+
+  <!-- Avis section -->
+
+  <div class="testimonials-section">
+    <h2 id="testimonial-title">Témoignages de nos visiteurs</h2>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <img src="images/testimonial homme.jpeg" alt="Photo de Visiteur 1" class="testimonial-img">
+        <p class="testimonial-text">"Un voyage inoubliable au Maroc. Des paysages à couper le souffle et une hospitalité sans pareil. Je recommande vivement!"</p>
+        <p>- Johnattan Tristan</p>
+      </div>
+      <div class="testimonial">
+        <img src="https://www.pointdevue.fr//storage/images/biography_900/_lcs4070.jpg" alt="Photo de Visiteur 2" class="testimonial-img">
+        <p class="testimonial-text">"J'ai adoré chaque instant passé à Chefchaouen. Les ruelles bleues sont simplement magiques. Une expérience unique."</p>
+        <p>- Marie Durand</p>
+      </div>
+      <div class="testimonial">
+        <img src="https://elsewhereeditions.org/wp-content/uploads/AliciaLopez-1.jpg"alt="Photo de Visiteur 2" class="testimonial-img">
+        <p class="testimonial-text">"De superbes paysages. Les vues sont à couper le souffle."</p>
+        <p>- Ariana Lopez</p>
+      </div>
+    </div>  
+  </div>
+
+  <!-- garanties section -->
+
+  <div>
+    <div class="container">
+      <div class="garanties">
+        <div class="garanties-1">
+          <img src="images/free-logo.png" alt="free-logo">
+          <h3>Devis 100% gratuit</h3>
+          <p>Demandez er recevez un devis 100% gratuit et sans engagement</p>
+        </div>
+        <div class="garanties-2">
+          <img src="images/map-logo.png" alt="map-logo">
+          <h3>Voyage individuel</h3>
+          <p>Nous créons un voyage ultra personnalisé selon vos envies</p>
+        </div>
+        <div class="garanties-3">
+          <img src="images/callcenter-logo.png" alt="callcenter-logo">
+          <h3>Experts de voyage</h3>
+          <p>Des spécialistes du voyage avec une expertise localisée</p>
+        </div>
+        <Div class="garanties-4">
+          <img src="images/Assistance-logo.png" alt="Assistance-logo">
+          <h3>Assistance 24h/24, 7j/7</h3>
+          <p>Un imprévu ? Appelez-nous à tout moment !</p>
+        </Div>
+      </div>
+    </div>
+    <div class="container"> <a class="btn-green2" href="">Planifier votre voyage !</a></div>
+  </div>
+
+
+  <!-- Form section -->
+  <div data-tf-live="01HTPMDPA94ZJ3EBZ7769RM5AW"></div><script src="//embed.typeform.com/next/embed.js"></script>
+
+  
+ 
+  <!-- Footer section -->
+  <div class=" footer">
+    <h3>Nos réseaux</h3>
+      <div id="social-media">
+        <div class="list-inline">
+          <a href="https://www.tiktok.com/@ayouuu333?_t=8lGptW1snNG&_r=1"><i class="fa-brands fa-tiktok logo-rs effect"></i></a>
+          <a href="https://www.instagram.com/ayabadidi?igsh=ajQ1anFvN3I3NTg0&utm_source=qr"><i class="fa-brands fa-instagram logo-rs effect"></i></a>
+          <a href="https://www.facebook.com/aya.badidi.946/"><i class="fa-brands fa-facebook logo-rs effect"></i></a>
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
